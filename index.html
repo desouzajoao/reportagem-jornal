@@ -2,58 +2,171 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Reportagem</title>
+  <title>Reportagem Especial</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff;
+      color: #111;
+      max-width: 1000px;
       margin: auto;
-      line-height: 1.6;
+      padding: 20px;
+      line-height: 1.7;
     }
-    h1 { font-size: 32px; }
-    h2 { font-size: 22px; margin-top: 40px; }
+
+    /* CABEÇALHO */
+    .topo {
+      border-bottom: 2px solid #000;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+    }
+
+    .topo h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    /* MATÉRIA PRINCIPAL */
+    .principal h2 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
     .linha-fina {
+      font-size: 18px;
       font-style: italic;
-      color: gray;
+      color: #555;
+      margin-bottom: 15px;
     }
+
+    .principal p {
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    /* IMAGENS */
     .imagem {
       margin: 20px 0;
     }
+
+    .imagem img {
+      width: 100%;
+      height: auto;
+    }
+
     .legenda {
       font-size: 14px;
       color: #555;
+      margin-top: 5px;
+    }
+
+    /* DIVISÃO */
+    .divisor {
+      border-top: 2px solid #000;
+      margin: 40px 0 20px;
+    }
+
+    /* SECUNDÁRIAS */
+    .secundarias {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .materia h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .materia p {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 700px) {
+      .secundarias {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- MATÉRIA PRINCIPAL -->
-  <h1>TÍTULO PRINCIPAL</h1>
-  <p class="linha-fina">Linha fina da matéria principal</p>
-
-  <div class="imagem">
-    <img src="imagem1.jpg" width="100%">
-    <p class="legenda">Legenda da imagem principal</p>
+  <!-- TOPO -->
+  <div class="topo">
+    <h1>Reportagem Especial</h1>
   </div>
 
-  <p>Corpo da matéria principal...</p>
+  <!-- MATÉRIA PRINCIPAL -->
+  <section class="principal">
+    <h2>TÍTULO PRINCIPAL DA REPORTAGEM</h2>
+    <p class="linha-fina">Linha fina que contextualiza a matéria principal de forma objetiva e informativa</p>
+
+    <div class="imagem">
+      <img src="imagem1.jpg">
+      <p class="legenda">Legenda da imagem principal</p>
+    </div>
+
+    <p>Primeiro parágrafo da matéria principal. Aqui entra o lead com as informações mais importantes.</p>
+
+    <p>Desenvolvimento da reportagem com aprofundamento, dados e contexto social.</p>
+
+    <p>Mais um parágrafo trazendo personagens, falas ou observações relevantes.</p>
+  </section>
+
+  <div class="divisor"></div>
 
   <!-- MATÉRIAS SECUNDÁRIAS -->
-  <h2>Título matéria 1</h2>
-  <div class="imagem">
-    <img src="imagem2.jpg" width="100%">
-    <p class="legenda">Legenda</p>
-  </div>
-  <p>Texto da matéria...</p>
+  <section class="secundarias">
 
-  <h2>Título matéria 2</h2>
-  <p>Texto...</p>
+    <div class="materia">
+      <h3>Título da matéria secundária 1</h3>
 
-  <h2>Título matéria 3</h2>
-  <p>Texto...</p>
+      <div class="imagem">
+        <img src="imagem2.jpg">
+        <p class="legenda">Legenda da imagem</p>
+      </div>
 
-  <h2>Título matéria 4</h2>
-  <p>Texto...</p>
+      <p>Texto da matéria secundária.</p>
+    </div>
+
+    <div class="materia">
+      <h3>Título da matéria secundária 2</h3>
+
+      <div class="imagem">
+        <img src="imagem3.jpg">
+        <p class="legenda">Legenda da imagem</p>
+      </div>
+
+      <p>Texto da matéria secundária.</p>
+    </div>
+
+    <div class="materia">
+      <h3>Título da matéria secundária 3</h3>
+
+      <div class="imagem">
+        <img src="imagem4.jpg">
+        <p class="legenda">Legenda da imagem</p>
+      </div>
+
+      <p>Texto da matéria secundária.</p>
+    </div>
+
+    <div class="materia">
+      <h3>Título da matéria secundária 4</h3>
+
+      <div class="imagem">
+        <img src="imagem5.jpg">
+        <p class="legenda">Legenda da imagem</p>
+      </div>
+
+      <p>Texto da matéria secundária.</p>
+    </div>
+
+  </section>
 
 </body>
 </html>
