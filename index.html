@@ -2,72 +2,57 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>REPORTAGEM IMPRESSA</title>
+  <title>Reportagem Especial</title>
 
   <style>
     body {
       font-family: Georgia, "Times New Roman", serif;
-      background: #fff;
-      color: #111;
       max-width: 1000px;
       margin: auto;
       padding: 20px;
       line-height: 1.7;
+      color: #111;
     }
 
-    /* CABEÇALHO */
     .topo {
       border-bottom: 2px solid #000;
       margin-bottom: 30px;
-      padding-bottom: 10px;
     }
 
     .topo h1 {
-      font-size: 40px;
-      margin: 0;
+      font-size: 38px;
     }
 
-    /* MATÉRIA PRINCIPAL */
     .principal h2 {
-      font-size: 36px;
-      margin-bottom: 5px;
+      font-size: 34px;
     }
 
     .linha-fina {
-      font-size: 18px;
       font-style: italic;
       color: #555;
       margin-bottom: 15px;
     }
 
-    .principal p {
-      font-size: 18px;
-      text-align: justify;
-    }
-
-    /* IMAGENS */
-    .imagem {
-      margin: 20px 0;
-    }
-
     .imagem img {
       width: 100%;
-      height: auto;
     }
 
     .legenda {
       font-size: 14px;
       color: #555;
-      margin-top: 5px;
     }
 
-    /* DIVISÃO */
+    .destaque {
+      font-style: italic;
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
     .divisor {
       border-top: 2px solid #000;
-      margin: 40px 0 20px;
+      margin: 40px 0;
     }
 
-    /* SECUNDÁRIAS */
     .secundarias {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -76,15 +61,8 @@
 
     .materia h3 {
       font-size: 22px;
-      margin-bottom: 10px;
     }
 
-    .materia p {
-      font-size: 16px;
-      text-align: justify;
-    }
-
-    /* RESPONSIVO */
     @media (max-width: 700px) {
       .secundarias {
         grid-template-columns: 1fr;
@@ -95,26 +73,41 @@
 
 <body>
 
-  <!-- TOPO -->
   <div class="topo">
-    <h1>TITULO DO SITE</h1>
+    <h1>Reportagem Especial</h1>
   </div>
 
   <!-- MATÉRIA PRINCIPAL -->
   <section class="principal">
+
     <h2>Mujeres Valientes en Vuelo: a imigração feminina em Londrina</h2>
-    <p class="linha-fina">Como mulheres venezuelanas reconstruíram suas vidas no norte do Paraná</p>
+
+    <p class="linha-fina">
+      Como mulheres venezuelanas reconstruíram suas vidas no norte do Paraná
+    </p>
+
+    <p class="destaque">
+      “Lá o dinheiro não dava. Mesmo trabalhando o mês todo não dava pra fazer uma compra boa...”
+    </p>
+
+    <p>O relato é de Sorelis Rodriguez...</p>
 
     <div class="imagem">
       <img src="imagem1.jpg">
-      <p class="legenda">“Eu já nem penso mais em mim, penso nos meus filhos. Aqui eles podem estudar, têm transporte e comem bem.”</p>
+      <p class="legenda">Legenda da imagem</p>
     </div>
 
-    <p>O relato é de Sorelis Rodriguez, apenas uma imigrante dentro dos 87 mil venezuelanos que vivem no Paraná, segundo dados  do Observatório das Migrações Internacionais (OBMigra). Esta reportagem acompanhou os motivos, receios, efeitos e sentimentos de mulheres venezuelanas que vivem em Londrina, no norte do Paraná.</p>
+    <h3>A LÍNGUA COMO BARREIRA</h3>
+    <p>Texto...</p>
 
-    <p>Sorelis tem 31 anos, está há nove anos no Brasil e hoje possui uma mercearia na comunidade onde mora, de onde tira o sustento para a família. Ela foi a primeira mulher venezuelana a chegar na comunidade Flores do Campo, uma ocupação urbana que obriga cerca de mil famílias como a dela, famílias que trabalham muito para garantir um melhor futuro para seus filhos.</p>
+    <h3>O DESEJO DE VOLTAR, OU A FALTA DELE</h3>
+    <p>Texto...</p>
 
-    <p>A luta diária pela garantia de um amanhã mais promissor apresenta-se o principal motivo da cruzada de quase 5.570 km que separam Barcelona, em Anzoátegui na Venezuela e a cidade paranaense. Yanetzi José Rivas é coordenadora do grupo de imigrantes na comunidade de imigrantes e compartilha dos esforços da colega de vizinhança.</p>
+    <div class="imagem">
+      <img src="imagem2.jpg">
+      <p class="legenda">Legenda</p>
+    </div>
+
   </section>
 
   <div class="divisor"></div>
@@ -123,47 +116,23 @@
   <section class="secundarias">
 
     <div class="materia">
-      <h3>Título da matéria secundária 1</h3>
-
-      <div class="imagem">
-        <img src="imagem2.jpg">
-        <p class="legenda">Legenda da imagem</p>
-      </div>
-
-      <p>Texto da matéria secundária.</p>
+      <h3>Título matéria 1</h3>
+      <p>Texto...</p>
     </div>
 
     <div class="materia">
-      <h3>Título da matéria secundária 2</h3>
-
-      <div class="imagem">
-        <img src="imagem3.jpg">
-        <p class="legenda">Legenda da imagem</p>
-      </div>
-
-      <p>Texto da matéria secundária.</p>
+      <h3>Título matéria 2</h3>
+      <p>Texto...</p>
     </div>
 
     <div class="materia">
-      <h3>Título da matéria secundária 3</h3>
-
-      <div class="imagem">
-        <img src="imagem4.jpg">
-        <p class="legenda">Legenda da imagem</p>
-      </div>
-
-      <p>Texto da matéria secundária.</p>
+      <h3>Título matéria 3</h3>
+      <p>Texto...</p>
     </div>
 
     <div class="materia">
-      <h3>Título da matéria secundária 4</h3>
-
-      <div class="imagem">
-        <img src="imagem5.jpg">
-        <p class="legenda">Legenda da imagem</p>
-      </div>
-
-      <p>Texto da matéria secundária.</p>
+      <h3>Título matéria 4</h3>
+      <p>Texto...</p>
     </div>
 
   </section>
